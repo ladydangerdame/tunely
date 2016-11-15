@@ -17,7 +17,8 @@ $(document).ready(function() {
 
     function handleGetAlbumSuccess(json) {
         console.log(json.albums);
-        json.albums.forEach(function renderOneAlbum(album) {
+        var receivedAlbums = json;
+        receivedAlbums.forEach(function renderOneAlbum(album) {
             renderAlbum(album);
         });
 
