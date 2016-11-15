@@ -39,7 +39,10 @@ sampleAlbums.push({
 
 $(document).ready(function() {
   console.log('app.js loaded!');
-  renderAlbum(sampleAlbums[0]);
+  sampleAlbums.forEach(function renderOneAlbum(album){
+
+    renderAlbum(album);
+  });
 });
 
 
